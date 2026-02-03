@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>（仮）</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=1.0.1">
 </head>
 <body>
 
@@ -14,16 +14,19 @@
   </header>
 
   <main>
-    <section>
-      <h2>検索結果（サンプル）</h2>
-
-      <article class="result-item">
-        <p class="author">作成者: example_user</p>
-        <a href="/" target="_blank">example site</a>
-      </article>
-      
+    <section aria-labelledby="search-title">
+      <h2 id="search-title">検索</h2>
+      <input type="text" placeholder="キーワード">
+      <button>検索</button>
     </section>
+
+    <section aria-labelledby="result-title">
+      <h2 id="result-title">検索結果</h2>
+      <div id="results"></div>
+    </section>
+
   </main>
     
+  <script type="module" src="main.js"></script>
 </body>
 </html>
